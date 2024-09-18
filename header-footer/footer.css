@@ -1,0 +1,130 @@
+:root {
+  overflow-x: hidden;
+  --color-yellow: hsl(48, 94%, 53%);
+  --color-white: hsl(0deg 0% 99.02%);
+  --color-black: hsl(30deg 11.76% 6.67%);
+  --color-footer: hsl(30deg 11.76% 7.85%);
+  --color-footer-text: hsl(36deg 7.85% 37.45%);
+}
+footer {
+  width: auto;
+  height: auto;
+  background: var(--color-footer);
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  gap: 2rem;
+}
+
+footer h4 {
+  color: var(--color-yellow);
+}
+
+footer p {
+  color: var(--color-white);
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+div.instagram {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram p {
+  margin: 1px;
+}
+
+div.useful-link {
+  width: 20rem;
+}
+
+div.features {
+  width: 20rem;
+}
+
+div.contactus-footer {
+  width: 20rem;
+}
+
+.copyright {
+  display: flex;
+  height: 2rem;
+  text-align: center;
+  background: var(--color-footer);
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    width: auto;
+    height: auto;
+    background: var(--color-footer);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0;
+    justify-content: space-between;
+  }
+  footer h4 {
+    color: var(--color-yellow);
+    font-size: 14px;
+  }
+
+  footer p {
+    color: var(--color-white);
+    font-size: 14px;
+  }
+
+  div.instagram {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .instagram p {
+    margin: 1px;
+  }
+
+  div.useful-link {
+    width: auto;
+  }
+
+  div.features {
+    width: auto;
+  }
+
+  div.contactus-footer {
+    width: auto;
+  }
+
+  .copyright {
+    display: flex;
+    height: 1rem;
+    text-align: center;
+    background: var(--color-footer);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-white);
+  }
+}

@@ -1,0 +1,125 @@
+:root {
+  overflow-x: hidden;
+  --color-yellow: hsl(48, 94%, 53%);
+  --color-white: hsl(0deg 0% 99.02%);
+  --color-black: hsl(30deg 11.76% 6.67%);
+  --color-footer: hsl(30deg 11.76% 7.85%);
+  --color-footer-text: hsl(36deg 7.85% 37.45%);
+}
+svg {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  fill: var(--color-black);
+  position: fixed;
+  z-index: 1;
+  bottom: 5vh;
+  right: 5vw;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--color-yellow);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--color-white);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 30px;
+}
+.sidenav {
+  right: 0;
+}
+
+.single-product {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  /* row-gap: 2rem; */
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.cart-product {
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  flex-wrap: wrap;
+}
+
+.cart-product strong {
+  color: var(--color-white);
+  margin: 0;
+}
+
+.cart-product-price {
+  color: var(--color-white);
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  height: auto;
+}
+
+.cart-product-image {
+  padding-left: 2rem;
+  width: 100px;
+  height: 100px;
+}
+
+.product-line {
+  border: var(--color-yellow);
+  background-color: var(--color-yellow);
+  margin-right: 2rem;
+  margin-left: 2rem;
+  height: 1px;
+  width: 22rem;
+}
+
+.sideBar {
+  padding: 0 1rem;
+  color: var(--color-yellow);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+}
+
+.background {
+  filter: blur(5px);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

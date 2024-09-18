@@ -1,0 +1,129 @@
+:root {
+  overflow-x: hidden;
+  --color-yellow: hsl(48, 94%, 53%);
+  --color-white: hsl(0deg 0% 99.02%);
+  --color-black: hsl(30deg 11.76% 6.67%);
+  --color-footer: hsl(30deg 11.76% 7.85%);
+  --color-footer-text: hsl(36deg 7.85% 37.45%);
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#category-heading {
+  font-size: 2.488rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+#category-heading span {
+  color: var(--color-yellow);
+  font-size: 4rem;
+}
+
+#category-title {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+#product-listing {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  background: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  background: var(--color-white);
+  border-radius: 10% 10%;
+  padding: 1rem 2rem;
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 10px 5px;
+}
+.product-card p {
+  color: var(--color-black);
+}
+.add-to-cart {
+  border: none;
+  background: var(--color-yellow);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 100px;
+}
+.add-to-cart:hover {
+  background: hsl(44, 85%, 43%);
+  color: var(--color-white);
+}
+.product-pic {
+  filter: drop-shadow(0 25px 20px #999);
+  height: 20vh;
+  width: auto;
+}
+/* ============= */
+
+/* ============= */
+
+@media (min-width: 320px) and (max-width: 425px) {
+  #category-heading {
+    font-size: 22px;
+  }
+
+  #category-heading span {
+    font-size: 26px;
+  }
+
+  #category-title {
+    font-size: 20px;
+  }
+  #product-listing {
+    margin-top: 2rem;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .product-card {
+    padding: 0.5rem 1.5rem;
+    width: 8rem;
+    height: 15rem;
+  }
+
+  .product-card p {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .add-to-cart {
+    margin: 10px;
+  }
+
+  .product-pic {
+    height: 15vh;
+    width: auto;
+  }
+}

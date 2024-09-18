@@ -1,0 +1,65 @@
+:root {
+  --color-yellow: hsl(48, 94%, 53%);
+  --color-white: hsl(0deg 0% 99.02%);
+  --color-black: hsl(30deg 11.76% 6.67%);
+  --color-footer: hsl(30deg 11.76% 7.85%);
+  --color-footer-text: hsl(36deg 7.85% 37.45%);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#navMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#navMenu a {
+  text-align: center;
+  padding: 16px 40px 16px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--color-white);
+  display: block;
+  transition: 0.3s;
+}
+
+#navMenu a:hover {
+  color: var(--color-yellow);
+}
+
+#navMenu .closeNavbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #navMenu {
+    display: none;
+  }
+  .navMenuSpan {
+    display: none;
+  }
+}

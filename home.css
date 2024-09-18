@@ -1,0 +1,810 @@
+:root {
+  overflow-x: hidden;
+  --color-yellow: hsl(48, 94%, 53%);
+  --color-white: hsl(0deg 0% 99.02%);
+  --color-black: hsl(30deg 11.76% 6.67%);
+  --color-footer: hsl(30deg 11.76% 7.85%);
+  --color-footer-text: hsl(36deg 7.85% 37.45%);
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-black);
+  padding: 0;
+  margin: 0;
+  width: auto;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+select {
+  border: none;
+  outline: none;
+  width: 18px;
+  background-color: #110f0d;
+  color: var(--color-yellow);
+}
+
+.logo {
+  width: 70px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* top: 20px; */
+}
+
+#home-section {
+  background-image: url(images/banner-bg.png);
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+h1 {
+  width: 50vw;
+  left: 24%;
+  margin: 0;
+  position: relative;
+  top: 15rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 4.04rem;
+  color: white;
+}
+h1 stan {
+  color: var(--color-yellow);
+  font-size: 4rem;
+}
+
+.home-text-p {
+  left: 23%;
+  margin: 0;
+  position: relative;
+  top: 16rem;
+  font-size: 15px;
+  color: white;
+}
+
+.buy-now {
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  font-weight: 600;
+  background: var(--color-yellow);
+  color: black;
+  border: none;
+  padding: 8px 4px;
+  margin-top: 20rem;
+  margin-bottom: 1rem;
+}
+
+#aboutus-section {
+  width: auto;
+  height: auto;
+  background: var(--color-white);
+  z-index: 2;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  background: var(--color-white);
+  padding: 5rem 5rem;
+}
+
+#aboutus-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-text-heading {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+hr {
+  margin: 0;
+  width: 10px;
+  height: 66px;
+  border: var(--color-yellow);
+  background-color: var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.aboutus-text-heading h2 {
+  color: black;
+  font-size: 2.488rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.aboutus-text-para {
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  width: 26rem;
+}
+
+.shoe {
+  width: 30vw;
+  height: 50vh;
+}
+
+.read-more {
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 3rem;
+  font-weight: 600;
+  margin-left: 6rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.read-more:hover {
+  background-color: hsl(30deg 11.76% 15%);
+}
+
+#dynamic-best-quality-section {
+  width: auto;
+  height: auto;
+  background-color: var(--color-black);
+}
+
+.best-quality-heading {
+  font-size: 2.488rem;
+  padding-top: 15px;
+  text-align: center;
+  color: var(--color-white);
+}
+.best-quality-heading stan {
+  font-size: 4rem;
+  padding-top: 15px;
+  text-align: center;
+  color: var(--color-yellow);
+}
+
+.best-quality-para {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.dynamic-products {
+  margin-top: 5.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dynamic-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5%;
+  box-shadow: 0 0 13px 0px var(--color-yellow);
+}
+
+.dynamic-text {
+  margin: 0;
+  line-height: 1.5rem;
+  color: var(--color-white);
+}
+
+.dynamic-shoe-pic {
+  width: 20vw;
+  height: 40vh;
+}
+
+.dynamic-button {
+  padding: 5px 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 2px 2px;
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dynamic-button:hover {
+  background-color: var(--color-yellow);
+}
+
+#static-best-quality-section {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  height: auto;
+  background-color: var(--color-white);
+
+  padding-bottom: 2rem;
+}
+
+.static-best-quality-heading {
+  font-size: 2.488rem;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.static-best-quality-heading stan {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-yellow);
+}
+
+.static-best-quality-para {
+  text-align: center;
+  color: var(--color-black);
+}
+
+.static-product-card-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.static-product-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20vw;
+}
+
+.static-text {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: left;
+  margin-top: 0;
+}
+
+.static-shoe-pic {
+  width: 20vw;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.static-shoe-pic-7 {
+  margin-top: 2.3rem;
+  width: 20vw;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.static-button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  font-weight: 600;
+  margin-right: 10rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.static-button:hover {
+  background-color: hsl(30deg 11.76% 15%);
+}
+
+#testimonial-section {
+  width: auto;
+  height: 80vh;
+  background-color: var(--color-white);
+}
+
+.testimonial-heading {
+  padding-top: 4rem;
+  margin-top: 0;
+  font-size: 2.488rem;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.testimonial-heading stan {
+  padding-top: 4rem;
+  margin-top: 0;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-yellow);
+}
+
+.testimonial-para {
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 4rem;
+}
+
+.testimonial-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  column-gap: 3rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--color-black);
+  border-radius: 10px 10px;
+  box-shadow: 15px 15px 20px 5px #333;
+}
+
+.testimonial-name h3 {
+  color: var(--color-white);
+  letter-spacing: 1.5px;
+}
+
+.testimonial-name p {
+  color: var(--color-yellow);
+}
+
+.testimony-para {
+  color: var(--color-white);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#contact-section {
+  width: auto;
+  height: 80vh;
+  background-color: var(--color-black);
+}
+
+.contact {
+  margin: 0;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.488rem;
+  color: var(--color-white);
+}
+
+.contact stan {
+  margin: 0;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 4rem;
+  color: var(--color-yellow);
+}
+
+.contact-part {
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-input {
+  display: flex;
+  width: 14rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: none;
+  background-color: #eeeee6;
+  width: 12rem;
+  font-weight: 500;
+}
+
+.name:focus-visible {
+  outline: none;
+}
+
+.email {
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: none;
+  background-color: #eeeee6;
+  width: 12rem;
+  font-weight: 500;
+}
+
+.email:focus-visible {
+  outline: none;
+}
+
+.phone-number {
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: none;
+  background-color: #eeeee6;
+  width: 12rem;
+  font-weight: 500;
+}
+
+.phone-number:focus-visible {
+  outline: none;
+}
+
+.message-box {
+  border-radius: 5px 5px;
+  padding: 10px;
+  border: none;
+  background-color: #eeeee6;
+  width: 12rem;
+  font-weight: 500;
+  resize: none;
+}
+
+.message-box:focus-visible {
+  outline: none;
+}
+
+.submit {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 8px 12px;
+  border: none;
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: hsl(48, 94%, 60%);
+}
+
+#newsletter-section {
+  width: auto;
+  height: 25vh;
+  background-color: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.newsletter-heading {
+  width: auto;
+  display: flex;
+  padding: 0 7rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.newsletter-heading h3 {
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 4.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.03rem;
+}
+
+.newsletter-link {
+  margin-right: 5.68rem;
+}
+
+a .github-icon {
+  height: 34px;
+  width: 34px;
+}
+
+.newsletter-input {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.newsletter-email {
+  border-radius: 25px 25px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #eeeee6;
+  width: 30rem;
+  font-weight: 500;
+}
+.newsletter-email:focus-visible {
+  outline: none;
+}
+
+.subscribe {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px 25px;
+  padding: 8px 12px;
+  margin-right: 1.75rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.subscribe:hover {
+  background-color: hsl(30deg 11.76% 15%);
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  #home-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-position: center;
+  }
+  h1 {
+    width: 100vw;
+    left: 10%;
+    top: 2.5rem;
+    font-size: 24px;
+    line-height: 2.5rem;
+  }
+  h1 stan {
+    font-size: 28px;
+  }
+  .home-text-p {
+    font-size: 12px;
+    width: 87vw;
+    left: 9%;
+    margin: 0;
+    top: 2.6rem;
+  }
+  .buy-now {
+    left: 45%;
+    margin-top: 3rem;
+  }
+
+  .about-us {
+    gap: 0;
+    padding: 0;
+  }
+
+  #aboutus-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    width: 52vw;
+  }
+
+  .aboutus-text-heading {
+    width: 13rem;
+    margin-left: 12px;
+    margin-top: 2rem;
+  }
+
+  hr {
+    height: auto;
+  }
+
+  .aboutus-text-heading h2 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+
+  .aboutus-text-para {
+    margin-left: 12px;
+    margin-top: 0.5rem;
+    width: auto;
+    font-size: 12px;
+  }
+
+  .shoe {
+    margin-top: 5rem;
+    margin-right: 15px;
+    width: 45vw;
+    height: auto;
+  }
+
+  .read-more {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .best-quality-heading {
+    font-size: 24px;
+  }
+  .best-quality-heading stan {
+    font-size: 28px;
+  }
+
+  .best-quality-para {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .dynamic-products {
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .dynamic-product-card {
+    width: 10rem;
+    height: 14rem;
+    box-shadow: 0 0 2px 0px var(--color-yellow);
+  }
+
+  .dynamic-text {
+    text-align: center;
+    margin: 0;
+    line-height: 1.5rem;
+    color: var(--color-white);
+  }
+
+  .dynamic-shoe-pic {
+    width: 20vw;
+    height: 40vh;
+  }
+
+  .static-best-quality-heading {
+    font-size: 24px;
+  }
+
+  .static-best-quality-heading stan {
+    font-size: 28px;
+  }
+
+  .static-best-quality-para {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .static-product-card-container {
+    margin-top: 1rem;
+    row-gap: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .static-product-card {
+    width: 100vw;
+  }
+
+  .static-text {
+    font-size: 12px;
+  }
+
+  .static-shoe-pic {
+    width: 70vw;
+    margin: 1rem 4rem;
+  }
+
+  .static-shoe-pic-7 {
+    width: 70vw;
+    margin: 1rem 4rem;
+  }
+
+  .static-button {
+    margin-left: 4rem;
+    padding: 6px 8px;
+    width: 6rem;
+    margin-right: 0rem;
+  }
+  #testimonial-section {
+    height: 65vh;
+  }
+
+  .testimonial-heading {
+    padding-top: 1rem;
+    font-size: 26px;
+  }
+
+  .testimonial-heading stan {
+    font-size: 28px;
+  }
+
+  .testimonial-para {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card {
+    padding-top: 1rem;
+    padding-left: 10px;
+    column-gap: 1rem;
+    width: 19rem;
+  }
+
+  .testimonial-name h3 {
+    font-size: 16px;
+  }
+
+  .testimonial-name p {
+    font-size: 14px;
+  }
+
+  .testimony-para {
+    font-size: 12px;
+  }
+  #contact-section {
+    height: auto;
+  }
+
+  .contact {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 24px;
+  }
+
+  .contact stan {
+    font-size: 28px;
+  }
+
+  .contact-part {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    align-items: center;
+  }
+  .submit {
+    width: 13rem;
+    border-radius: 25px;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    background-color: hsl(48, 94%, 60%);
+  }
+  iframe {
+    height: 30vh;
+    width: 60vw;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-heading {
+    padding: 0;
+    margin-left: 4rem;
+  }
+
+  .newsletter-heading h3 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .newsletter-link {
+    margin-right: 2.68rem;
+  }
+
+  .newsletter-email {
+    margin-left: 1rem;
+    width: 16rem;
+  }
+
+  .subscribe {
+    width: 5rem;
+    padding: 6px 9px;
+    margin-right: 1.2rem;
+  }
+}

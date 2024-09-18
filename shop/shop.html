@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website Shop</title>
+    <link rel="stylesheet" href="../header-footer/header.css" />
+    <link rel="stylesheet" href="../mobilemenu/menu.css" />
+    <link rel="stylesheet" href="../side-cart/sidecart.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="../header-footer/footer.css" />
+    <link rel="stylesheet" href="../category-function.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="../side-cart/sidecart.js" defer></script>
+    <script src="../Add to Cart/addtocart.js" defer></script>
+    <script src="shop.js" defer></script>
+    <script src="../mobilemenu/menu.js" defer></script>
+    <script src="../category-function.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- this is for mobile and tablets -->
+      <div id="navMenu">
+        <a href="javascript:void(0)" class="closeNavbtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../index.html" target="_blank">Home</a>
+        <a href="#">Shop Page</a>
+        <a href="../categories/categories.html" target="_blank">Categories</a>
+        <a href="../cart/cart.html" target="_blank">Cart Page</a>
+      </div>
+      <span
+        style="font-size: 30px; cursor: pointer; color: hsl(48, 94%, 53%)"
+        onclick="openNav()"
+        class="navMenuSpan"
+        >&#9776;</span
+      >
+      <img src="../images/logo.png" alt="logo" class="logo" />
+      <!-- this is for laptop -->
+      <nav>
+        <ul>
+          <li><a href="../index.html" target="_blank">Home</a></li>
+          <li><a href="#">Shop Page</a></li>
+          <li>
+            <span class="li-span">Categories</span>
+            <div class="custom-dropdown">
+              <select id="categoryDropdown" aria-label="Categories Dropdown">
+                <option value="">Select a category</option>
+              </select>
+              <i class="dropdown-arrow fa fa-caret-down"></i>
+            </div>
+          </li>
+          <li><a href="../cart/cart.html" target="_blank">Cart Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <h3 class="sideBar">
+        Cart<a href="#" class="closebtn" onclick="closeCart()">&times;</a>
+      </h3>
+
+      <div class="sidebar-cart-container"></div>
+      <div class="single-product" id="single-product"></div>
+    </div>
+
+    <span onclick="openCart()"
+      ><?xml version="1.0" ?><svg
+        data-name="Layer 1"
+        height="50px"
+        id="Layer_1"
+        viewBox="0 0 200 200"
+        width="50px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title />
+        <path
+          d="M183.25,52.75a18.22,18.22,0,0,0-7-1h-91c-3.5,0-8-.5-11.5.5a9.64,9.64,0,0,0-7.5,9.5,10,10,0,0,0,10,10h90.5l-8,42a10.22,10.22,0,0,1-10,8h-75a10.66,10.66,0,0,1-10-8l-16-74a20.3,20.3,0,0,0-19.5-16h-7a10,10,0,0,0,0,20h7l16,74c3,14,15,23.5,29.5,23.5h75c12,0,24.5-8,28-19.5,2.5-8,4-17,5.5-25,1.5-8.5,3.5-17,5-25a17.76,17.76,0,0,0,1-5,17,17,0,0,0,.5-5c0-4-2-8-5.5-9Zm-132,108.5a15,15,0,0,0,30,0h0a15,15,0,0,0-30,0Zm90,0a15,15,0,1,0,15-15,15,15,0,0,0-15,15v0Z"
+        /></svg
+    ></span>
+
+    <div id="main" class="">
+      <section class="main-section">
+        <h1 class="shop-heading"><stan>S</stan>HOP</h1>
+        <input type="text" id="myInput" placeholder="Search for products..." />
+        <div class="product-container" id="product-container"></div>
+        <div id="pagination"></div>
+        <div class="sidebar-cart">
+          <div class="sidebar"></div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="useful-link">
+        <h4 class="useful-link">USEFUL LINK</h4>
+        <p class="useful-link">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, ipsam!
+        </p>
+      </div>
+      <div class="features">
+        <h4 class="features">FEATURES</h4>
+        <p class="features">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, ipsam!
+        </p>
+      </div>
+      <div class="instagram">
+        <h4 class="instagram">INSTAGRAM</h4>
+        <p class="instagram">
+          <img src="../images/icon-1.png" alt="" /><a
+            href="https://www.instagram.com/_syedsharjeel_/"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+        <p class="instagram">
+          <img src="../images/icon-1.png" alt="" /><a
+            href="https://github.com/ghous-12"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+        <p class="instagram">
+          <img src="../images/icon-1.png" alt="" /><a
+            href="https://github.com/ghous-12"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+      </div>
+
+      <div class="contactus-footer">
+        <h4 class="contactus-footer">CONTACT US</h4>
+        <p class="contactus-footer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, ipsam!
+        </p>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>&copy; 2024 Ghous. All rights reserved.</p>
+    </div>
+  </body>
+</html>
